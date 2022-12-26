@@ -22,6 +22,8 @@ To test the above Transformer enoder-decoder model on `test.txt` and `val.txt`, 
 
 Hence, we get val and test accuracy. Saves the metrics in a JSON file.
 
-The model file used can be found at `models\transformer\nlayers3hdim256\best_model_full_epoch50.pth`. The `--exp_name` and `--best_epoch` arguments are used to fetch the required model. Here, the `exp_name` is `nlayers3hdim256`, to signify a Transformer enoder-decoder model with 3 layers, 8 attention heads, and hidden dim of 256. The `--best_epoch` is `50`, which is the epoch number where best validation loss was obtained. 
+The model file used can be found at `models\transformer\nlayers3hdim256\best_model_full_epoch50.pth`. 
+1. The `--exp_name` and `--best_epoch` arguments are used to fetch the required model. Here, the `exp_name` is `nlayers3hdim256`, to signify a Transformer enoder-decoder model with 3 layers, 8 attention heads, and hidden dim of 256. 
+2. The `--best_epoch` is `50`, which is the epoch number where best validation loss was obtained. 
 
 Also, prints results on 10 equations each for both val and test data.
