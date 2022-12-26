@@ -29,7 +29,7 @@ The model file used can be found at `models\transformer\nlayers3hdim256\best_mod
 Also, prints results on 10 equations each for both val and test data.
 
 # Results
-
+```
 ---- Example 0 ----
 src = (o-2)*(3*o+31)
 trg = 3*o**2+25*o-62
@@ -107,3 +107,4 @@ src = -7*o*(-7*o-27)
 trg = 49*o**2+189*o
 prd = 49*o**2+189*o
 score = 1
+```
