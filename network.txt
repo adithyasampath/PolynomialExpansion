@@ -1,0 +1,316 @@
+==============================================================================================================
+                                                   Kernel Shape  \
+Layer                                                             
+0_encoder.Embedding_tok_embedding                     [256, 36]   
+1_encoder.Embedding_pos_embedding                    [256, 100]   
+2_encoder.Dropout_dropout                                     -   
+3_encoder.layers.0.self_attention.Linear_fc_q        [256, 256]   
+4_encoder.layers.0.self_attention.Linear_fc_k        [256, 256]   
+5_encoder.layers.0.self_attention.Linear_fc_v        [256, 256]   
+6_encoder.layers.0.self_attention.Dropout_dropout             -   
+7_encoder.layers.0.self_attention.Linear_fc_o        [256, 256]   
+8_encoder.layers.0.Dropout_dropout                            -   
+9_encoder.layers.0.LayerNorm_self_attn_layer_norm         [256]   
+10_encoder.layers.0.positionwise_feedforward.Li...   [256, 512]   
+11_encoder.layers.0.positionwise_feedforward.Dr...            -   
+12_encoder.layers.0.positionwise_feedforward.Li...   [512, 256]   
+13_encoder.layers.0.Dropout_dropout                           -   
+14_encoder.layers.0.LayerNorm_ff_layer_norm               [256]   
+15_encoder.layers.1.self_attention.Linear_fc_q       [256, 256]   
+16_encoder.layers.1.self_attention.Linear_fc_k       [256, 256]   
+17_encoder.layers.1.self_attention.Linear_fc_v       [256, 256]   
+18_encoder.layers.1.self_attention.Dropout_dropout            -   
+19_encoder.layers.1.self_attention.Linear_fc_o       [256, 256]   
+20_encoder.layers.1.Dropout_dropout                           -   
+21_encoder.layers.1.LayerNorm_self_attn_layer_norm        [256]   
+22_encoder.layers.1.positionwise_feedforward.Li...   [256, 512]   
+23_encoder.layers.1.positionwise_feedforward.Dr...            -   
+24_encoder.layers.1.positionwise_feedforward.Li...   [512, 256]   
+25_encoder.layers.1.Dropout_dropout                           -   
+26_encoder.layers.1.LayerNorm_ff_layer_norm               [256]   
+27_encoder.layers.2.self_attention.Linear_fc_q       [256, 256]   
+28_encoder.layers.2.self_attention.Linear_fc_k       [256, 256]   
+29_encoder.layers.2.self_attention.Linear_fc_v       [256, 256]   
+30_encoder.layers.2.self_attention.Dropout_dropout            -   
+31_encoder.layers.2.self_attention.Linear_fc_o       [256, 256]   
+32_encoder.layers.2.Dropout_dropout                           -   
+33_encoder.layers.2.LayerNorm_self_attn_layer_norm        [256]   
+34_encoder.layers.2.positionwise_feedforward.Li...   [256, 512]   
+35_encoder.layers.2.positionwise_feedforward.Dr...            -   
+36_encoder.layers.2.positionwise_feedforward.Li...   [512, 256]   
+37_encoder.layers.2.Dropout_dropout                           -   
+38_encoder.layers.2.LayerNorm_ff_layer_norm               [256]   
+39_decoder.Embedding_tok_embedding                    [256, 36]   
+40_decoder.Embedding_pos_embedding                   [256, 100]   
+41_decoder.Dropout_dropout                                    -   
+42_decoder.layers.0.self_attention.Linear_fc_q       [256, 256]   
+43_decoder.layers.0.self_attention.Linear_fc_k       [256, 256]   
+44_decoder.layers.0.self_attention.Linear_fc_v       [256, 256]   
+45_decoder.layers.0.self_attention.Dropout_dropout            -   
+46_decoder.layers.0.self_attention.Linear_fc_o       [256, 256]   
+47_decoder.layers.0.Dropout_dropout                           -   
+48_decoder.layers.0.LayerNorm_self_attn_layer_norm        [256]   
+49_decoder.layers.0.encoder_attention.Linear_fc_q    [256, 256]   
+50_decoder.layers.0.encoder_attention.Linear_fc_k    [256, 256]   
+51_decoder.layers.0.encoder_attention.Linear_fc_v    [256, 256]   
+52_decoder.layers.0.encoder_attention.Dropout_d...            -   
+53_decoder.layers.0.encoder_attention.Linear_fc_o    [256, 256]   
+54_decoder.layers.0.Dropout_dropout                           -   
+55_decoder.layers.0.LayerNorm_enc_attn_layer_norm         [256]   
+56_decoder.layers.0.positionwise_feedforward.Li...   [256, 512]   
+57_decoder.layers.0.positionwise_feedforward.Dr...            -   
+58_decoder.layers.0.positionwise_feedforward.Li...   [512, 256]   
+59_decoder.layers.0.Dropout_dropout                           -   
+60_decoder.layers.0.LayerNorm_ff_layer_norm               [256]   
+61_decoder.layers.1.self_attention.Linear_fc_q       [256, 256]   
+62_decoder.layers.1.self_attention.Linear_fc_k       [256, 256]   
+63_decoder.layers.1.self_attention.Linear_fc_v       [256, 256]   
+64_decoder.layers.1.self_attention.Dropout_dropout            -   
+65_decoder.layers.1.self_attention.Linear_fc_o       [256, 256]   
+66_decoder.layers.1.Dropout_dropout                           -   
+67_decoder.layers.1.LayerNorm_self_attn_layer_norm        [256]   
+68_decoder.layers.1.encoder_attention.Linear_fc_q    [256, 256]   
+69_decoder.layers.1.encoder_attention.Linear_fc_k    [256, 256]   
+70_decoder.layers.1.encoder_attention.Linear_fc_v    [256, 256]   
+71_decoder.layers.1.encoder_attention.Dropout_d...            -   
+72_decoder.layers.1.encoder_attention.Linear_fc_o    [256, 256]   
+73_decoder.layers.1.Dropout_dropout                           -   
+74_decoder.layers.1.LayerNorm_enc_attn_layer_norm         [256]   
+75_decoder.layers.1.positionwise_feedforward.Li...   [256, 512]   
+76_decoder.layers.1.positionwise_feedforward.Dr...            -   
+77_decoder.layers.1.positionwise_feedforward.Li...   [512, 256]   
+78_decoder.layers.1.Dropout_dropout                           -   
+79_decoder.layers.1.LayerNorm_ff_layer_norm               [256]   
+80_decoder.layers.2.self_attention.Linear_fc_q       [256, 256]   
+81_decoder.layers.2.self_attention.Linear_fc_k       [256, 256]   
+82_decoder.layers.2.self_attention.Linear_fc_v       [256, 256]   
+83_decoder.layers.2.self_attention.Dropout_dropout            -   
+84_decoder.layers.2.self_attention.Linear_fc_o       [256, 256]   
+85_decoder.layers.2.Dropout_dropout                           -   
+86_decoder.layers.2.LayerNorm_self_attn_layer_norm        [256]   
+87_decoder.layers.2.encoder_attention.Linear_fc_q    [256, 256]   
+88_decoder.layers.2.encoder_attention.Linear_fc_k    [256, 256]   
+89_decoder.layers.2.encoder_attention.Linear_fc_v    [256, 256]   
+90_decoder.layers.2.encoder_attention.Dropout_d...            -   
+91_decoder.layers.2.encoder_attention.Linear_fc_o    [256, 256]   
+92_decoder.layers.2.Dropout_dropout                           -   
+93_decoder.layers.2.LayerNorm_enc_attn_layer_norm         [256]   
+94_decoder.layers.2.positionwise_feedforward.Li...   [256, 512]   
+95_decoder.layers.2.positionwise_feedforward.Dr...            -   
+96_decoder.layers.2.positionwise_feedforward.Li...   [512, 256]   
+97_decoder.layers.2.Dropout_dropout                           -   
+98_decoder.layers.2.LayerNorm_ff_layer_norm               [256]   
+99_decoder.Linear_fc_out                              [256, 36]   
+
+                                                      Output Shape    Params  \
+Layer                                                                          
+0_encoder.Embedding_tok_embedding                     [1, 21, 256]    9.216k   
+1_encoder.Embedding_pos_embedding                     [1, 21, 256]     25.6k   
+2_encoder.Dropout_dropout                             [1, 21, 256]         -   
+3_encoder.layers.0.self_attention.Linear_fc_q         [1, 21, 256]   65.792k   
+4_encoder.layers.0.self_attention.Linear_fc_k         [1, 21, 256]   65.792k   
+5_encoder.layers.0.self_attention.Linear_fc_v         [1, 21, 256]   65.792k   
+6_encoder.layers.0.self_attention.Dropout_dropout   [1, 8, 21, 21]         -   
+7_encoder.layers.0.self_attention.Linear_fc_o         [1, 21, 256]   65.792k   
+8_encoder.layers.0.Dropout_dropout                    [1, 21, 256]         -   
+9_encoder.layers.0.LayerNorm_self_attn_layer_norm     [1, 21, 256]     512.0   
+10_encoder.layers.0.positionwise_feedforward.Li...    [1, 21, 512]  131.584k   
+11_encoder.layers.0.positionwise_feedforward.Dr...    [1, 21, 512]         -   
+12_encoder.layers.0.positionwise_feedforward.Li...    [1, 21, 256]  131.328k   
+13_encoder.layers.0.Dropout_dropout                   [1, 21, 256]         -   
+14_encoder.layers.0.LayerNorm_ff_layer_norm           [1, 21, 256]     512.0   
+15_encoder.layers.1.self_attention.Linear_fc_q        [1, 21, 256]   65.792k   
+16_encoder.layers.1.self_attention.Linear_fc_k        [1, 21, 256]   65.792k   
+17_encoder.layers.1.self_attention.Linear_fc_v        [1, 21, 256]   65.792k   
+18_encoder.layers.1.self_attention.Dropout_dropout  [1, 8, 21, 21]         -   
+19_encoder.layers.1.self_attention.Linear_fc_o        [1, 21, 256]   65.792k   
+20_encoder.layers.1.Dropout_dropout                   [1, 21, 256]         -   
+21_encoder.layers.1.LayerNorm_self_attn_layer_norm    [1, 21, 256]     512.0   
+22_encoder.layers.1.positionwise_feedforward.Li...    [1, 21, 512]  131.584k   
+23_encoder.layers.1.positionwise_feedforward.Dr...    [1, 21, 512]         -   
+24_encoder.layers.1.positionwise_feedforward.Li...    [1, 21, 256]  131.328k   
+25_encoder.layers.1.Dropout_dropout                   [1, 21, 256]         -   
+26_encoder.layers.1.LayerNorm_ff_layer_norm           [1, 21, 256]     512.0   
+27_encoder.layers.2.self_attention.Linear_fc_q        [1, 21, 256]   65.792k   
+28_encoder.layers.2.self_attention.Linear_fc_k        [1, 21, 256]   65.792k   
+29_encoder.layers.2.self_attention.Linear_fc_v        [1, 21, 256]   65.792k   
+30_encoder.layers.2.self_attention.Dropout_dropout  [1, 8, 21, 21]         -   
+31_encoder.layers.2.self_attention.Linear_fc_o        [1, 21, 256]   65.792k   
+32_encoder.layers.2.Dropout_dropout                   [1, 21, 256]         -   
+33_encoder.layers.2.LayerNorm_self_attn_layer_norm    [1, 21, 256]     512.0   
+34_encoder.layers.2.positionwise_feedforward.Li...    [1, 21, 512]  131.584k   
+35_encoder.layers.2.positionwise_feedforward.Dr...    [1, 21, 512]         -   
+36_encoder.layers.2.positionwise_feedforward.Li...    [1, 21, 256]  131.328k   
+37_encoder.layers.2.Dropout_dropout                   [1, 21, 256]         -   
+38_encoder.layers.2.LayerNorm_ff_layer_norm           [1, 21, 256]     512.0   
+39_decoder.Embedding_tok_embedding                    [1, 21, 256]    9.216k   
+40_decoder.Embedding_pos_embedding                    [1, 21, 256]     25.6k   
+41_decoder.Dropout_dropout                            [1, 21, 256]         -   
+42_decoder.layers.0.self_attention.Linear_fc_q        [1, 21, 256]   65.792k   
+43_decoder.layers.0.self_attention.Linear_fc_k        [1, 21, 256]   65.792k   
+44_decoder.layers.0.self_attention.Linear_fc_v        [1, 21, 256]   65.792k   
+45_decoder.layers.0.self_attention.Dropout_dropout  [1, 8, 21, 21]         -   
+46_decoder.layers.0.self_attention.Linear_fc_o        [1, 21, 256]   65.792k   
+47_decoder.layers.0.Dropout_dropout                   [1, 21, 256]         -   
+48_decoder.layers.0.LayerNorm_self_attn_layer_norm    [1, 21, 256]     512.0   
+49_decoder.layers.0.encoder_attention.Linear_fc_q     [1, 21, 256]   65.792k   
+50_decoder.layers.0.encoder_attention.Linear_fc_k     [1, 21, 256]   65.792k   
+51_decoder.layers.0.encoder_attention.Linear_fc_v     [1, 21, 256]   65.792k   
+52_decoder.layers.0.encoder_attention.Dropout_d...  [1, 8, 21, 21]         -   
+53_decoder.layers.0.encoder_attention.Linear_fc_o     [1, 21, 256]   65.792k   
+54_decoder.layers.0.Dropout_dropout                   [1, 21, 256]         -   
+55_decoder.layers.0.LayerNorm_enc_attn_layer_norm     [1, 21, 256]     512.0   
+56_decoder.layers.0.positionwise_feedforward.Li...    [1, 21, 512]  131.584k   
+57_decoder.layers.0.positionwise_feedforward.Dr...    [1, 21, 512]         -   
+58_decoder.layers.0.positionwise_feedforward.Li...    [1, 21, 256]  131.328k   
+59_decoder.layers.0.Dropout_dropout                   [1, 21, 256]         -   
+60_decoder.layers.0.LayerNorm_ff_layer_norm           [1, 21, 256]     512.0   
+61_decoder.layers.1.self_attention.Linear_fc_q        [1, 21, 256]   65.792k   
+62_decoder.layers.1.self_attention.Linear_fc_k        [1, 21, 256]   65.792k   
+63_decoder.layers.1.self_attention.Linear_fc_v        [1, 21, 256]   65.792k   
+64_decoder.layers.1.self_attention.Dropout_dropout  [1, 8, 21, 21]         -   
+65_decoder.layers.1.self_attention.Linear_fc_o        [1, 21, 256]   65.792k   
+66_decoder.layers.1.Dropout_dropout                   [1, 21, 256]         -   
+67_decoder.layers.1.LayerNorm_self_attn_layer_norm    [1, 21, 256]     512.0   
+68_decoder.layers.1.encoder_attention.Linear_fc_q     [1, 21, 256]   65.792k   
+69_decoder.layers.1.encoder_attention.Linear_fc_k     [1, 21, 256]   65.792k   
+70_decoder.layers.1.encoder_attention.Linear_fc_v     [1, 21, 256]   65.792k   
+71_decoder.layers.1.encoder_attention.Dropout_d...  [1, 8, 21, 21]         -   
+72_decoder.layers.1.encoder_attention.Linear_fc_o     [1, 21, 256]   65.792k   
+73_decoder.layers.1.Dropout_dropout                   [1, 21, 256]         -   
+74_decoder.layers.1.LayerNorm_enc_attn_layer_norm     [1, 21, 256]     512.0   
+75_decoder.layers.1.positionwise_feedforward.Li...    [1, 21, 512]  131.584k   
+76_decoder.layers.1.positionwise_feedforward.Dr...    [1, 21, 512]         -   
+77_decoder.layers.1.positionwise_feedforward.Li...    [1, 21, 256]  131.328k   
+78_decoder.layers.1.Dropout_dropout                   [1, 21, 256]         -   
+79_decoder.layers.1.LayerNorm_ff_layer_norm           [1, 21, 256]     512.0   
+80_decoder.layers.2.self_attention.Linear_fc_q        [1, 21, 256]   65.792k   
+81_decoder.layers.2.self_attention.Linear_fc_k        [1, 21, 256]   65.792k   
+82_decoder.layers.2.self_attention.Linear_fc_v        [1, 21, 256]   65.792k   
+83_decoder.layers.2.self_attention.Dropout_dropout  [1, 8, 21, 21]         -   
+84_decoder.layers.2.self_attention.Linear_fc_o        [1, 21, 256]   65.792k   
+85_decoder.layers.2.Dropout_dropout                   [1, 21, 256]         -   
+86_decoder.layers.2.LayerNorm_self_attn_layer_norm    [1, 21, 256]     512.0   
+87_decoder.layers.2.encoder_attention.Linear_fc_q     [1, 21, 256]   65.792k   
+88_decoder.layers.2.encoder_attention.Linear_fc_k     [1, 21, 256]   65.792k   
+89_decoder.layers.2.encoder_attention.Linear_fc_v     [1, 21, 256]   65.792k   
+90_decoder.layers.2.encoder_attention.Dropout_d...  [1, 8, 21, 21]         -   
+91_decoder.layers.2.encoder_attention.Linear_fc_o     [1, 21, 256]   65.792k   
+92_decoder.layers.2.Dropout_dropout                   [1, 21, 256]         -   
+93_decoder.layers.2.LayerNorm_enc_attn_layer_norm     [1, 21, 256]     512.0   
+94_decoder.layers.2.positionwise_feedforward.Li...    [1, 21, 512]  131.584k   
+95_decoder.layers.2.positionwise_feedforward.Dr...    [1, 21, 512]         -   
+96_decoder.layers.2.positionwise_feedforward.Li...    [1, 21, 256]  131.328k   
+97_decoder.layers.2.Dropout_dropout                   [1, 21, 256]         -   
+98_decoder.layers.2.LayerNorm_ff_layer_norm           [1, 21, 256]     512.0   
+99_decoder.Linear_fc_out                               [1, 21, 36]    9.252k   
+
+                                                   Mult-Adds  
+Layer                                                         
+0_encoder.Embedding_tok_embedding                     9.216k  
+1_encoder.Embedding_pos_embedding                      25.6k  
+2_encoder.Dropout_dropout                                  -  
+3_encoder.layers.0.self_attention.Linear_fc_q        65.536k  
+4_encoder.layers.0.self_attention.Linear_fc_k        65.536k  
+5_encoder.layers.0.self_attention.Linear_fc_v        65.536k  
+6_encoder.layers.0.self_attention.Dropout_dropout          -  
+7_encoder.layers.0.self_attention.Linear_fc_o        65.536k  
+8_encoder.layers.0.Dropout_dropout                         -  
+9_encoder.layers.0.LayerNorm_self_attn_layer_norm      256.0  
+10_encoder.layers.0.positionwise_feedforward.Li...  131.072k  
+11_encoder.layers.0.positionwise_feedforward.Dr...         -  
+12_encoder.layers.0.positionwise_feedforward.Li...  131.072k  
+13_encoder.layers.0.Dropout_dropout                        -  
+14_encoder.layers.0.LayerNorm_ff_layer_norm            256.0  
+15_encoder.layers.1.self_attention.Linear_fc_q       65.536k  
+16_encoder.layers.1.self_attention.Linear_fc_k       65.536k  
+17_encoder.layers.1.self_attention.Linear_fc_v       65.536k  
+18_encoder.layers.1.self_attention.Dropout_dropout         -  
+19_encoder.layers.1.self_attention.Linear_fc_o       65.536k  
+20_encoder.layers.1.Dropout_dropout                        -  
+21_encoder.layers.1.LayerNorm_self_attn_layer_norm     256.0  
+22_encoder.layers.1.positionwise_feedforward.Li...  131.072k  
+23_encoder.layers.1.positionwise_feedforward.Dr...         -  
+24_encoder.layers.1.positionwise_feedforward.Li...  131.072k  
+25_encoder.layers.1.Dropout_dropout                        -  
+26_encoder.layers.1.LayerNorm_ff_layer_norm            256.0  
+27_encoder.layers.2.self_attention.Linear_fc_q       65.536k  
+28_encoder.layers.2.self_attention.Linear_fc_k       65.536k  
+29_encoder.layers.2.self_attention.Linear_fc_v       65.536k  
+30_encoder.layers.2.self_attention.Dropout_dropout         -  
+31_encoder.layers.2.self_attention.Linear_fc_o       65.536k  
+32_encoder.layers.2.Dropout_dropout                        -  
+33_encoder.layers.2.LayerNorm_self_attn_layer_norm     256.0  
+34_encoder.layers.2.positionwise_feedforward.Li...  131.072k  
+35_encoder.layers.2.positionwise_feedforward.Dr...         -  
+36_encoder.layers.2.positionwise_feedforward.Li...  131.072k  
+37_encoder.layers.2.Dropout_dropout                        -  
+38_encoder.layers.2.LayerNorm_ff_layer_norm            256.0  
+39_decoder.Embedding_tok_embedding                    9.216k  
+40_decoder.Embedding_pos_embedding                     25.6k  
+41_decoder.Dropout_dropout                                 -  
+42_decoder.layers.0.self_attention.Linear_fc_q       65.536k  
+43_decoder.layers.0.self_attention.Linear_fc_k       65.536k  
+44_decoder.layers.0.self_attention.Linear_fc_v       65.536k  
+45_decoder.layers.0.self_attention.Dropout_dropout         -  
+46_decoder.layers.0.self_attention.Linear_fc_o       65.536k  
+47_decoder.layers.0.Dropout_dropout                        -  
+48_decoder.layers.0.LayerNorm_self_attn_layer_norm     256.0  
+49_decoder.layers.0.encoder_attention.Linear_fc_q    65.536k  
+50_decoder.layers.0.encoder_attention.Linear_fc_k    65.536k  
+51_decoder.layers.0.encoder_attention.Linear_fc_v    65.536k  
+52_decoder.layers.0.encoder_attention.Dropout_d...         -  
+53_decoder.layers.0.encoder_attention.Linear_fc_o    65.536k  
+54_decoder.layers.0.Dropout_dropout                        -  
+55_decoder.layers.0.LayerNorm_enc_attn_layer_norm      256.0  
+56_decoder.layers.0.positionwise_feedforward.Li...  131.072k  
+57_decoder.layers.0.positionwise_feedforward.Dr...         -  
+58_decoder.layers.0.positionwise_feedforward.Li...  131.072k  
+59_decoder.layers.0.Dropout_dropout                        -  
+60_decoder.layers.0.LayerNorm_ff_layer_norm            256.0  
+61_decoder.layers.1.self_attention.Linear_fc_q       65.536k  
+62_decoder.layers.1.self_attention.Linear_fc_k       65.536k  
+63_decoder.layers.1.self_attention.Linear_fc_v       65.536k  
+64_decoder.layers.1.self_attention.Dropout_dropout         -  
+65_decoder.layers.1.self_attention.Linear_fc_o       65.536k  
+66_decoder.layers.1.Dropout_dropout                        -  
+67_decoder.layers.1.LayerNorm_self_attn_layer_norm     256.0  
+68_decoder.layers.1.encoder_attention.Linear_fc_q    65.536k  
+69_decoder.layers.1.encoder_attention.Linear_fc_k    65.536k  
+70_decoder.layers.1.encoder_attention.Linear_fc_v    65.536k  
+71_decoder.layers.1.encoder_attention.Dropout_d...         -  
+72_decoder.layers.1.encoder_attention.Linear_fc_o    65.536k  
+73_decoder.layers.1.Dropout_dropout                        -  
+74_decoder.layers.1.LayerNorm_enc_attn_layer_norm      256.0  
+75_decoder.layers.1.positionwise_feedforward.Li...  131.072k  
+76_decoder.layers.1.positionwise_feedforward.Dr...         -  
+77_decoder.layers.1.positionwise_feedforward.Li...  131.072k  
+78_decoder.layers.1.Dropout_dropout                        -  
+79_decoder.layers.1.LayerNorm_ff_layer_norm            256.0  
+80_decoder.layers.2.self_attention.Linear_fc_q       65.536k  
+81_decoder.layers.2.self_attention.Linear_fc_k       65.536k  
+82_decoder.layers.2.self_attention.Linear_fc_v       65.536k  
+83_decoder.layers.2.self_attention.Dropout_dropout         -  
+84_decoder.layers.2.self_attention.Linear_fc_o       65.536k  
+85_decoder.layers.2.Dropout_dropout                        -  
+86_decoder.layers.2.LayerNorm_self_attn_layer_norm     256.0  
+87_decoder.layers.2.encoder_attention.Linear_fc_q    65.536k  
+88_decoder.layers.2.encoder_attention.Linear_fc_k    65.536k  
+89_decoder.layers.2.encoder_attention.Linear_fc_v    65.536k  
+90_decoder.layers.2.encoder_attention.Dropout_d...         -  
+91_decoder.layers.2.encoder_attention.Linear_fc_o    65.536k  
+92_decoder.layers.2.Dropout_dropout                        -  
+93_decoder.layers.2.LayerNorm_enc_attn_layer_norm      256.0  
+94_decoder.layers.2.positionwise_feedforward.Li...  131.072k  
+95_decoder.layers.2.positionwise_feedforward.Dr...         -  
+96_decoder.layers.2.positionwise_feedforward.Li...  131.072k  
+97_decoder.layers.2.Dropout_dropout                        -  
+98_decoder.layers.2.LayerNorm_ff_layer_norm            256.0  
+99_decoder.Linear_fc_out                              9.216k  
+--------------------------------------------------------------------------------------------------------------
+                         Totals
+Total params          4.032548M
+Trainable params      4.032548M
+Non-trainable params        0.0
+Mult-Adds             4.014848M
+==============================================================================================================
