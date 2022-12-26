@@ -35,7 +35,7 @@ Also, prints results on 10 equations each for both val and test data.
 ## Experiments with different hidden dims
 
 
-|Hidden dim| Enc | Dec Hidden dim | Test Accuracy| Validation Accuracy|
+|Hidden dim| Enc & Dec Hidden dim | Test Accuracy| Validation Accuracy|
 |:--------:|:--------------------:|:------------:|:------------------:|
 |256 |  256| 0.99762 | 0.99786| 
 |512 | 512 | 0.99495 | 0.99478|
