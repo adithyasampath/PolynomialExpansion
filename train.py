@@ -27,7 +27,7 @@ if __name__ == "__main__":
     parser.add_argument("--seed", type=int, default=1234)
     parser.add_argument("--epochs", type=int, default=51)
     parser.add_argument("--val_every", type=int, default=5)
-    parser.add_argument('--test', action='store_true', default=True)
+    parser.add_argument('--test', action='store_true', default=False)
     parser.add_argument("--model_path", type=str, default="models/transformer/nlayers3hdim256nhead10/best_model_full_epoch45.pth")
     parser.add_argument("--best_epoch", type=int, default=45)
     parser.add_argument("--device", type=str, default="cuda")
