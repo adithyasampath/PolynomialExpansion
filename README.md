@@ -30,6 +30,14 @@ Also, prints results on 10 equations each for both val and test data.
 
 # Results
 
+`network.txt` provides the model summary and number of parameters of the Transformer model
+
+`Report.pdf` provides the explaination why I used this model, the hyperparameters, the ablation study, comparison of results, and loss plots. 
+
+`models/transformer` folder has the weights for best model for all experiments.
+
+`logs` folder has the tensorboard logs for all experiments 
+
 # Quantitative Results
 
 ## Experiments with different hidden dims
