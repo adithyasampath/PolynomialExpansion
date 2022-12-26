@@ -22,13 +22,46 @@ To test the above Transformer enoder-decoder model on `test.txt` and `val.txt`, 
 
 Hence, we get val and test accuracy. Saves the metrics in a JSON file.
 
-The model file used can be found at `models\transformer\nlayers3hdim256\best_model_full_epoch50.pth`. 
-1. The `--exp_name` and `--best_epoch` arguments are used to fetch the required model. Here, the `exp_name` is `nlayers3hdim256`, to signify a Transformer enoder-decoder model with 3 layers, 8 attention heads, and hidden dim of 256. 
-2. The `--best_epoch` is `50`, which is the epoch number where best validation loss was obtained. 
+The model file used can be found at `models/transformer/nlayers3hdim256nhead10/best_model_full_epoch45.pth`. 
+1. The `--exp_name` and `--best_epoch` arguments are used to fetch the required model. Here, the `exp_name` is `nlayers3hdim256nhead10`, to signify a Transformer enoder-decoder model with 3 layers, 8 attention heads, and hidden dim of 256. 
+2. The `--best_epoch` is `45`, which is the epoch number where best validation loss was obtained. 
 
 Also, prints results on 10 equations each for both val and test data.
 
 # Results
+
+# Quantitative Results
+
+## Experiments with different hidden dims
+
+
+|Hidden dim| Enc | Dec Hidden dim | Test Accuracy| Validation Accuracy|
+|:--------:|:--------------------:|:------------:|:------------------:|
+|256 |  256| 0.99762 | 0.99786| 
+|512 | 512 | 0.99495 | 0.99478|
+|256 | 512 | 0.99262 | 0.9925|
+|512 | 256 | 0.9959  | 0.99566|
+
+## Experiments with different encoder decoder layers
+
+|Num Layers | Test Accuracy| Validation Accuracy|
+|:--------:|:--------------------:|:------------:|
+|1 | 0.99333 | 0.99272|    
+|2 | 0.99688 | 0.99688|
+|3 | 0.99762 | 0.99786|
+|4 | 0.99461 | 0.99457|
+    
+## Experiments with different number of heads for encoder decoder layers
+
+|Num heads | Test Accuracy| Validation Accuracy|
+|:--------:|:--------------------:|:------------:|
+|4 | 0.99117 | 0.99074|
+|6 | 0.99662 | 0.99663|
+|8 | 0.99762 | 0.99786|  
+|10 | 0.99841 | 0.99823|
+    
+
+# Qualitative Results
 ```
 ---- Example 0 ----
 src = (o-2)*(3*o+31)
